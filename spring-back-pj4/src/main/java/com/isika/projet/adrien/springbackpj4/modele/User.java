@@ -13,17 +13,16 @@ public class User {
 	private Integer id;
 	
 	private String nom;
-	
-	private Number membresFamille;
-	
-	private Number teletravail;
 
-	public User(Integer id, String nom, Number membresFamille, Number teletravail) {
+	public User(Integer id, String nom) {
 		super();
 		this.id = id;
 		this.nom = nom;
-		this.membresFamille = membresFamille;
-		this.teletravail = teletravail;
+	}
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public Integer getId() {
@@ -41,21 +40,9 @@ public class User {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
+	
 
-	public Number getMembresFamille() {
-		return membresFamille;
-	}
-
-	public void setMembresFamille(Number membresFamille) {
-		this.membresFamille = membresFamille;
-	}
-
-	public Number getTeletravail() {
-		return teletravail;
-	}
-
-	public void setTeletravail(Number teletravail) {
-		this.teletravail = teletravail;
-	}
+	
 
 }
